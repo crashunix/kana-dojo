@@ -1305,7 +1305,7 @@
     "id": 218,
     "fact": "The Japanese term 'gacha-gacha' is onomatopoeia for capsule toy machines: the crank sound (gacha) and capsule drop (gacha).",
     "issued": false,
-    "completed": false
+    "completed": true
   },
   {
     "id": 219,
@@ -1323,7 +1323,7 @@
     "id": 221,
     "fact": "Japan has 'shuumatsu okashi' trends where limited-edition sweets appear for a season and then disappear, making them collectible.",
     "issued": false,
-    "completed": false
+    "completed": true
   },
   {
     "id": 222,
@@ -1341,12 +1341,12 @@
     "id": 224,
     "fact": "The Japanese word 'mijikai' (短い) means short, but 'mijikai hanashi' can refer to a concise story — valued in polite conversation.",
     "issued": false,
-    "completed": false
+    "completed": true
   },
   {
     "id": 225,
     "fact": "Japan has a concept 'yakudoshi' (厄年) — unlucky ages — where people often visit shrines for purification blessings.",
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
