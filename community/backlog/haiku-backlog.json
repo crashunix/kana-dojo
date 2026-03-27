@@ -81,7 +81,7 @@
     "kigo": "Sparrow chicks (suzume no ko)",
     "notes": "Playful and warm, characteristic of Issa's tone.",
     "issued": false,
-    "completed": false
+    "completed": true
   },
   {
     "id": 8,
@@ -117,7 +117,7 @@
     "kigo": "Frog (kaeru)",
     "notes": "Humorous encouragement and compassion in Issa's voice.",
     "issued": false,
-    "completed": false
+    "completed": true
   },
   {
     "id": 11,
