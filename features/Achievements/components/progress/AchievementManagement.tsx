@@ -25,10 +25,7 @@ export const AchievementManagement = () => {
     <div className='mx-auto mt-12 max-w-4xl'>
       {/* Management Header */}
       <div
-        className={clsx(
-          'border border-(--border-color) p-6',
-          cardBorderStyles,
-        )}
+        className={clsx('border border-(--border-color) p-6', cardBorderStyles)}
       >
         <div className='mb-4 flex items-center gap-3'>
           <RotateCcw className='text-(--main-color)' size={24} />

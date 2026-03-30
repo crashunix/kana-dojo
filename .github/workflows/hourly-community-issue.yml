@@ -1408,4 +1408,3 @@ jobs:
           print(json.dumps(payload))
           PY
           curl -sf -H "Content-Type: application/json" -X POST -d @/tmp/payload.json "$DISCORD_WEBHOOK"
-

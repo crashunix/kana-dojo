@@ -112,7 +112,8 @@ export default function ClientLayout({
       process.env.NEXT_PUBLIC_VERCEL_ENV !== 'production';
     const isTargetRoute = /\/(kana|kanji|vocabulary)(\/|$)/.test(pathname);
     const isPreferencesRoute = /\/preferences(\/|$)/.test(pathname);
-    const isBaseRoute = pathname === '/' || pathname === '/en' || pathname === '/ja';
+    const isBaseRoute =
+      pathname === '/' || pathname === '/en' || pathname === '/ja';
     const donationLastPathKey = 'donation-modal-last-pathname';
     const donationCycleCountKey = 'donation-modal-cycle-count';
     const previousPathname =
@@ -218,10 +219,36 @@ export default function ClientLayout({
   const { playClick } = useClick();
   useEffect(() => {
     const IGNORED_KEYS = new Set([
-      'Shift', 'Control', 'Alt', 'Meta', 'Tab', 'Escape', 'Enter',
-      'ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight',
-      'Backspace', 'Delete', 'Home', 'End', 'PageUp', 'PageDown', 'CapsLock',
-      'F1', 'F2', 'F3', 'F4', 'F5', 'F6', 'F7', 'F8', 'F9', 'F10', 'F11', 'F12',
+      'Shift',
+      'Control',
+      'Alt',
+      'Meta',
+      'Tab',
+      'Escape',
+      'Enter',
+      'ArrowUp',
+      'ArrowDown',
+      'ArrowLeft',
+      'ArrowRight',
+      'Backspace',
+      'Delete',
+      'Home',
+      'End',
+      'PageUp',
+      'PageDown',
+      'CapsLock',
+      'F1',
+      'F2',
+      'F3',
+      'F4',
+      'F5',
+      'F6',
+      'F7',
+      'F8',
+      'F9',
+      'F10',
+      'F11',
+      'F12',
     ]);
 
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -229,7 +256,12 @@ export default function ClientLayout({
       const el = document.activeElement;
       if (!el) return;
       const tag = el.tagName;
-      if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT' || (el as HTMLElement).isContentEditable) {
+      if (
+        tag === 'INPUT' ||
+        tag === 'TEXTAREA' ||
+        tag === 'SELECT' ||
+        (el as HTMLElement).isContentEditable
+      ) {
         playClick();
       }
     };
